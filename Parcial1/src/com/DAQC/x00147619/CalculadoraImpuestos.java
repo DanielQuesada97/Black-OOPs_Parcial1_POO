@@ -1,4 +1,4 @@
-package com.DAQC.x00147619;
+package com.JSPR.x00046119;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public final class CalculadoraImpuestos {
         this.totalAFP = totalAFP;
     }
 
-    public double caluladoraPago(Empleado empleado){
+    /*public double caluladoraPago(Empleado empleado){
         List<Empleado> empleados = new ArrayList<>();
         empleados = ;
         double pago = 0;
@@ -51,7 +51,7 @@ public final class CalculadoraImpuestos {
             }
         }
         return pago;
-    }
+    }*/
 
     public String mostrarTotales(){
         return "!";

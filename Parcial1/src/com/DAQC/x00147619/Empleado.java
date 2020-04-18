@@ -1,8 +1,9 @@
-package com.DAQC.x00147619;
+package com.JSPR.x00046119;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Empleado {
+public abstract class Empleado{
     protected String nombre;
     protected String puesto;
     protected List<Documento> documentos;
@@ -22,12 +23,18 @@ public abstract class Empleado {
         return puesto;
     }
 
-    public List<Documento> getDocumentos(){
-        return documentos;
-    }
+    /*public List<Documento> getDocumentos(){
+        documentos.forEach(s ->{
+            s.getNombre();
+            s.getNumero();
+        });
+
+    }*/
 
     public void removeDocumento(String nombre){
-
+        String n = nombre;
+        String nombreFinal = n;
+        documentos.removeIf(s -> (nombreFinal.equals(s.getNombre())));
     }
 
     public double getSalario() {

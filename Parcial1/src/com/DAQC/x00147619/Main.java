@@ -1,4 +1,4 @@
-package com.DAQC.x00147619;
+package com.JSPR.x00046119;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -7,9 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Empleado> empleados = new ArrayList<>();
         Empresa empresa = new Empresa("Black OOPs");
-
+        String em = "Black OOPs";
         String nombre, puesto, numero;
         double salario;
         int mesesContrato, extension;
@@ -30,23 +29,31 @@ public class Main {
                     switch(opt){
                         case 0: //SERVICIO PROFESIONAL
                             nombre = JOptionPane.showInputDialog(null, "Nombre: ");
-                            numero = JOptionPane.showInputDialog(null, "DUI: ");
                             puesto = JOptionPane.showInputDialog(null, "Puesto: ");
                             salario = Double.parseDouble(JOptionPane.showInputDialog(null,
                                     "Salario: "));
                             mesesContrato = Integer.parseInt(JOptionPane.showInputDialog(null,
                                     "Meses de Contrato: "));
-                            empleados.add(new ServicioProfesional(nombre, puesto, salario, mesesContrato));
+                            empresa.addEmpleado(new ServicioProfesional(nombre, puesto, salario, mesesContrato));
                             break;
                         case 1:
+                            nombre = JOptionPane.showInputDialog(null, "Nombre: ");
+                            puesto = JOptionPane.showInputDialog(null, "Puesto: ");
+                            salario = Double.parseDouble(JOptionPane.showInputDialog(null,
+                                    "Salario: "));
+                            extension = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Meses de Contrato: "));
+                            empresa.addEmpleado(new PlazaFija(nombre, puesto, salario, extension ));
                             break;
                     }
-                    empresa.addEmpleado(Empleado);
+                    //empresa.addEmpleado();
                     break;
 
-                case 2: //DESPEDIR EMPLEADO
+                case 2:
+
                     break;
-                case 3: //VER LISTA DE EMPLEADOS
+                case 3:
+                   
                     break;
                 case 4: //CALCULAR SUELDO
                     break;
