@@ -22,9 +22,7 @@ public class Empresa {
     }
 
     public void addEmpleado(Empleado nuevoEmpleado){
-        List<Empleado> nuevoEmpleadoList = nuevoEmpleado;
-
-        planilla.add(new nuevoEmpleadoList);
+        planilla.add(nuevoEmpleado);
     }
 
     public void quitEmpleado(String nombre){

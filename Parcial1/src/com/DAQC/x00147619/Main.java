@@ -41,7 +41,7 @@ public class Main {
                         case 1:
                             break;
                     }
-                    empresa.addEmpleado();
+                    empresa.addEmpleado(Empleado);
                     break;
 
                 case 2: //DESPEDIR EMPLEADO
