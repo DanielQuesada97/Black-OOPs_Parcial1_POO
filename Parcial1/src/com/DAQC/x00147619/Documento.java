@@ -1,4 +1,7 @@
-package com.JSPR.x00046119;
+package com.DAQC.x00147619;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Documento {
     private String nombre;

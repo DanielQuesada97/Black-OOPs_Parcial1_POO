@@ -1,4 +1,4 @@
-package com.JSPR.x00046119;
+package com.DAQC.x00147619;
 
 public class PlazaFija extends Empleado{
     private int extension;

@@ -1,4 +1,4 @@
-package com.JSPR.x00046119;
+package com.DAQC.x00147619;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,7 @@ public abstract class Empleado{
         this.nombre = nombre;
         this.puesto = puesto;
         this.salario = salario;
+        documentos = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -23,17 +24,16 @@ public abstract class Empleado{
         return puesto;
     }
 
-    /*public List<Documento> getDocumentos(){
-        documentos.forEach(s ->{
-            s.getNombre();
-            s.getNumero();
-        });
+    public List<Documento> getDocumentos(){
+        return documentos;
+    }
 
-    }*/
+    public void addDocumento(Documento documento){
+        documentos.add(documento);
+    }
 
     public void removeDocumento(String nombre){
-        String n = nombre;
-        String nombreFinal = n;
+        String nombreFinal = nombre;
         documentos.removeIf(s -> (nombreFinal.equals(s.getNombre())));
     }
 
@@ -41,7 +41,9 @@ public abstract class Empleado{
         return salario;
     }
 
-    public void setSalario(double salario){
-
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
+
+
 }
