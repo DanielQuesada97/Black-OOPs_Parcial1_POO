@@ -33,8 +33,7 @@ public abstract class Empleado{
     }
 
     public void removeDocumento(String nombre){
-        String nombreFinal = nombre;
-        documentos.removeIf(s -> (nombreFinal.equals(s.getNombre())));
+        documentos.removeIf(s -> (nombre.equals(s.getNombre())));
     }
 
     public double getSalario() {

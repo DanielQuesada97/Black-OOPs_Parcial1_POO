@@ -1,6 +1,5 @@
 package com.DAQC.x00147619;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +26,7 @@ public class Empresa{
     }
 
     public void quitEmpleado(String nombre){
-        String nombreFinal = nombre;
-        planilla.removeIf(s -> s.getNombre().equals(nombreFinal));
+        planilla.removeIf(s -> s.getNombre().equals(nombre));
     }
 }
 
